@@ -1,0 +1,37 @@
+## clone a single branch
+
+git clone --single-branch --branch [name_of_your_new_branch] [repo]
+
+
+## Switch branch
+
+git checkout [name_of_your_new_branch]   # switch to [name_of_your_new_branch]
+
+
+
+## Create the branch on your local machine and switch in this branch 
+
+git checkout -b [name_of_your_new_branch]
+
+
+
+## Push code from local to github
+
+git add .                                                  # add changes to git 
+git status                                                 # check branch and files
+git commit -m '......'                                     # commit code and write down a brief comment
+git push origin [name_of_your_new_branch]                  # push to github in [name_of_your_new_branch]
+
+
+
+## Get update from github within the same branch
+
+git pull                    # pull the changes from upstream
+
+
+
+## Get the latest version of code from the main branch
+
+git checkout [name_of_your_new_branch]     # gets you on branch [name_of_your_new_branch]
+git fetch origin                           # gets you up to date with origin
+git merge origin/main
