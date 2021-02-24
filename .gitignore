@@ -29,6 +29,9 @@ build/Release
 # Dependency directory
 node_modules
 
+# Destination file
+dist
+
 # Debug log from npm
 npm-debug.log
 
